@@ -30,9 +30,9 @@ public class PessoaController {
 
     @GetMapping("/listar")
     public ResponseEntity<List<Pessoa>> listarPessoas() {
-        List<Pessoa> clientesRetorno = pessoaRepository.findAll();
+        List<Pessoa> pessoaRetorno  = pessoaRepository.findAll();
 
-        return ResponseEntity.ok().body(clientesRetorno);
+        return ResponseEntity.ok().body(pessoaRetorno);
     }
 
 
