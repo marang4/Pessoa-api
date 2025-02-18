@@ -40,7 +40,7 @@ public class PessoaController {
     public ResponseEntity<Pessoa> atualizarCliente(@RequestBody Pessoa pessoa, @PathVariable Long id){
         Optional<Pessoa> retorno =  pessoaRepository.findById(id).map(record -> {
             record.setNome(pessoa.getNome());
-
+//alteração
             return pessoaRepository.save(record);
         });
         if (retorno.isPresent()){
