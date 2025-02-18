@@ -31,6 +31,7 @@ public class PessoaController {
     @GetMapping("/listar")
     public ResponseEntity<List<Pessoa>> listarPessoas() {
         List<Pessoa> pessoaRetorno  = pessoaRepository.findAll();
+//teste de commit
 
         return ResponseEntity.ok().body(pessoaRetorno);
     }
